@@ -1,0 +1,16 @@
+
+#include<iostream>
+using namespace std;
+int nth(int a)
+{
+    int ans=10+3*(a-1);
+    return ans;
+}
+int main() {
+   int n;
+   cout<<"Enter n value\n";
+   cin>>n;
+   int ans=nth(n);
+   cout<<"nth term is: "<<ans;
+   return 0; 
+}
