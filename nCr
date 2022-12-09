@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int fact(int n)
+{
+    int fct=1;
+    for(int i=n;i>0;i--)
+    {
+        fct=fct*i;
+    }
+    return fct;
+}
+int nCr(int a,int b)
+{
+    int ans=fact(a)/(fact(b)*fact(a-b));
+    return ans;         
+}
+int main() {
+    int x,y;
+    cout<<"Enter the values of x,y\n";
+    cin >> x >> y;
+    cout<<"Required answer is : "<<nCr(x,y);
+    return 0;
+}
