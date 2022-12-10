@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int lin(int arr[],int siz,int key)
+{
+    for(int i=0;i<siz;i++)
+    {
+        if(key==arr[i])
+        {
+            return i; 
+        }
+    }
+    return -1;
+}
+int main() {
+    int arr[10] = {22,10,9,2,-4,9,83,43,55,23};
+    int a;
+    cout<<"Enter the key\n";
+    cin >> a;
+    if(lin(arr,10,a)>=0)
+    {
+        cout<<"Element found at index " <<  lin(arr,10,a);
+    }
+    else
+    {
+        cout << "Element Not found\n";
+    }
+    return 0;
+}
